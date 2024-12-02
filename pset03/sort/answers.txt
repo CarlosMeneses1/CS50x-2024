@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: Bubble sort has better lower bound than selection and merge sort (Ω(n)). Sort 1 is fastest in sourted.txt than the others
+
+sort2 uses: merge sort
+
+How do you know?: Sort 2, in average, has the fastest time in random.txt and reversed.txt than sort 1 and 3. Merge sort has better upper bound than selection and bubble sort (O(n logn))
+
+sort3 uses: selection sort
+
+How do you know?: Sort 3, in average, has the worsts times in almost every scenario. Selection sort is θ(n²), the lowest algoritm type in every scenario
