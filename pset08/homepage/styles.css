@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+}
+
+.navbar {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.carousel-item {
+    min-height: 400px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 70px;
+    font-weight: 600px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 60px;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.4);
+    z-index:1;
+}
+
+.services {
+    padding: 80px 0;
+}
+
+.bg-car1 {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(img/ingelec.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-car2 {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(img/deporte.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-car3 {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(img/libertad.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-icons i {
+    font-size: 40px;
+}
+
+.box-icons h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.product {
+    padding: 80px 0;
+}
+
+.card img {
+    width: 300x;
+    height: 150px;
+}
+
+.banner {
+    padding: 50px 0;
+    margin-bottom: 80px;
+    background-color: #EAE5DF;
+}
+
+.banner h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.banner img {
+    width: 50%;
+}
+
+@media(max-width: 767px) {
+
+    .carousel-item {
+        min-height: 500px;
+    }
+
+    .carousel-item img {
+        height: 500px
+    }
+
+    .carousel-caption {
+        bottom: 30px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 50px;
+        margin-top: 0;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        font-size: 16px
+    }
+
+    .services {
+        padding: 30px 0;
+    }
+
+    .product {
+        padding: 30px 0 0 0;
+    }
+
+    .banner {
+        margin-bottom: 30px;
+    }
+
+}
