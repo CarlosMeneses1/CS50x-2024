@@ -1,2 +1,2 @@
-# CS50x-2024
-Harvard CS50x 2024🚀 — My solutions 👨🏽‍💻
+# CS50x-2025
+Harvard CS50x 2025🚀 — My solutions 👨🏽‍💻
