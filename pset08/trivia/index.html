@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+                let correct = document.querySelector('.correct');
+                    correct.addEventListener('click', function() {
+                        correct.style.backgroundColor = 'Green';
+                        correct.parentElement.querySelector('#feedback').innerHTML = 'Correct!';
+                    });
+
+                let incorrects = document.querySelectorAll(".incorrect");
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener('click', function() {
+                        incorrects[i].style.backgroundColor = 'Red';
+                        incorrects[i].parentElement.querySelector('#feedback').innerHTML = 'Incorrect';
+                    });
+                }
+
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    if (input.value === 'Messi') {
+                        input.style.backgroundColor = 'green';
+                        input.parentElement.querySelector('#feedback').innerHTML = 'Correct!';
+                    }
+                    else {
+                        input.style.backgroundColor = 'red';
+                        input.parentElement.querySelector('#feedback').innerHTML = 'Incorrect';
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which is the best soccer club team in the world?</h3>
+                <button class="incorrect">Real Madrid</button>
+                <button class="incorrect">Manchester United</button>
+                <button class="incorrect">Bayern Munich</button>
+                <button class="correct"  >Barcelona</button>
+                <button class="incorrect">Liverpool</button>
+                <p id="feedback"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Who is the best soccer player in the history?</h3>
+                <input id="input">
+                <button id="check">Check Answer</button>
+                <p id="feedback"></p>
+            </div>
+        </div>
+    </body>
+</html>
